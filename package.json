@@ -1,14 +1,18 @@
 {
+  "homepage":"http://ctsxt.github.io/image-creator",
   "name": "image-creator",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "vite": "^4.0.0"
   },
   "dependencies": {
